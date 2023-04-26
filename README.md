@@ -19,6 +19,8 @@ The main workflow established is executed by several python scripts manually, do
 
 ## Workflow
 
+![Visual representation as diagram](xx.png) 
+
 ### Data
 
 **Sample-Metafile** The file [samps.csv](data/dest_v2.samps_25Feb2023.csv) is holding the information where the samples were taken in lat/long coordinate form and stores additional metadata. The tablecan be downloaded from DESTbio (https://dest.bio/).
@@ -36,7 +38,9 @@ It is called via shell command and stores minimum and maximum for latitude and l
 
 *Ideally this can be expanded with a method that defines the combination of layers where the most samples are covered to increase meaningfulness of the analysis.*
 
-**GetData.py** In Progress.
+**GetData.py** This is the code that actually establishes a connection to the rasdaman service and for now "downloads" the data so it can be processed locally. 
+In Progress.
+Note: This is python code the subprocesses a *curl* command to obtain the data, no Query Language is used so far. 
 
 
 ### Output
