@@ -28,7 +28,7 @@ Visual representation of the worflow can be found [here](#Workflow-Diagram).
 
 ### Scripts
 
-**GetWCSlayerInfo.py** This [script](scripts/GetWCSlayerInfo.py) is currently manually accessing ows.rasdaman.org and creates a short description file for GetCapabilities, more specific a csv table with information on all layers provided (name, geo extent and time dimensions) which can be found [here](output/layer_info_WCS.csv).
+**GetWCSlayerInfo.py** This [script](scripts/GetWCSlayerInfo.py) is currently manually accessing ows.rasdaman.org and creates a short description file for GetCapabilities, more specific a csv table with information on all layers provided (name, geo extent and time dimensions) which can be found [here](data/layer_info_WCS.csv).
 
 **GetBoundary.py** This [script](scripts/GetBoundary.py) is designed to find the "minimal overlapping area" of all the layers of interest (provided by a list with paramter -l). The idea is to allow inclusion of all metavariables to all later sample analysis to the same extent.
 
