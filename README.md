@@ -34,13 +34,13 @@ Visual representation of the worflow can be found [here](#Workflow-Diagram).
 
 It is called via shell command and stores minimum and maximum for latitude and longitude in a variable called *output*. This will be used in the next python code. 
 
-**FilterSamples.py** Uses the *output* as reference to filter out samples from [samps.csv](data/dest_v2.samps_25Feb2023.csv), so only sampels that are covered by these layers of interest will be processed. The scripts can be found [here](scripts/FilterSamples.py). 
+**FilterSamples.py** Uses the *output* as reference to filter out samples from [samps.csv](data/dest_v2.samps_25Feb2023.csv), so only sampels that are covered by these layers of interest will be processed. The script can be found [here](scripts/FilterSamples.py). 
 
 *Ideally this can be expanded with a method that defines the combination of layers where the most samples are covered to increase meaningfulness of the analysis.*
 
 **GetData.py** This is the code that actually establishes a connection to the rasdaman service and for now "downloads" the data so it can be processed locally. 
 In Progress.
-Note: This is python code the subprocesses a *curl* command to obtain the data, no Query Language is used so far. 
+Note: This is python code that subprocesses a *curl* command to obtain the data, no Query Language is used so far. 
 
 
 ### Output
