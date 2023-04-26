@@ -22,13 +22,6 @@ parser.add_option("-l", "--list", dest="my_list", action="append", help="Usage: 
 parser.add_option_group(group)
 (options, args) = parser.parse_args()
 
-
-# Define the CSV filename
-#csv_filename = "/media/ssteindl/fairicube/rasda/layer_info.csv"
-
-# Define a list of layer names to extract data from
-#layer_names = ["AverageChloroColor", "AvgTemperatureColor", "nchc.earthserver.xyz:7000:MSMlvltest"]
-
 layer_names= options.my_list
 
 #print(layer_names)

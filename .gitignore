@@ -1,6 +1,5 @@
 output/
 EnvData2/
-data/dest_v2.samps_25Feb2023.csv   
 rasda.xml
 objectives.sh
 scripts/getData.py
