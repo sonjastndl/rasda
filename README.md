@@ -19,7 +19,7 @@ The main workflow established is executed by several python scripts manually, do
 
 ## Workflow
 
-![Visual representation as diagram](xx.png) 
+Visual representation of the worflow can be found [here](#Workflow-Diagram).
 
 ### Data
 
@@ -52,3 +52,6 @@ in progress
 ### Results
 
 Soon :-)
+
+## Workflow-Diagram
+![Visual representation as diagram](Wormpicker.png) 
