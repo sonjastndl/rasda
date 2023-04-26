@@ -36,7 +36,7 @@ for layer in layers:
         layer_info.append((name, minx, maxx, miny, maxy, start_time, end_time))
 
 # Write the layer names and bounding boxes to a CSV file
-with open("/media/ssteindl/fairicube/rasda/layer_info_WCS.csv", "w", newline="") as csvfile:
+with open("/media/ssteindl/fairicube/rasda/output/layer_info_WCS.csv", "w", newline="") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(["LayerName", "Min X", "Max X", "Min Y", "Max Y", "TimeStart", "TimeEnd"])
     writer.writerows(layer_info)

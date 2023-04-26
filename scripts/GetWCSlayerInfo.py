@@ -70,7 +70,7 @@ for layer in coverages:
     layer_info.append((layer_name, minlat,maxlat, minlong, maxlong,f,t))
 
 
-with open("/media/ssteindl/fairicube/rasda/layer_info_WCS.csv", "w", newline="") as csvfile:
+with open("/media/ssteindl/fairicube/rasda/output/layer_info_WCS.csv", "w", newline="") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(["LayerName", "Min X", "Max X", "Min Y", "Max Y", "TimeStart", "TimeEnd"])
     writer.writerows(layer_info)

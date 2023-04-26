@@ -17,7 +17,6 @@ group=OptionGroup(parser,
 #########################################################   CODE   #########################################################################
 
 parser.add_option("--LayerInfoFile", dest="INFO", help="The Layer Info file.")
-parser.add_option("--Layers", dest="LAY", help="Layers that are of interest.")
 parser.add_option("-l", "--list", dest="my_list", action="append", help="Usage: python my_script.py -l Object1 -l Object2 -l Object3")
 
 parser.add_option_group(group)
@@ -31,6 +30,8 @@ parser.add_option_group(group)
 #layer_names = ["AverageChloroColor", "AvgTemperatureColor", "nchc.earthserver.xyz:7000:MSMlvltest"]
 
 layer_names= options.my_list
+
+#print(layer_names)
 
 # Open the CSV file and read its contents
 with open(options.INFO, "r") as f:
@@ -63,4 +64,4 @@ common_min_y = max(min_y_values)
 common_max_y = min(max_y_values)
 
 # Print the common boundary box
-print(f"{common_min_x}:{common_max_x}, {common_min_y}:{common_max_y}")
+print(f"{common_min_x}:{common_max_x}:{common_min_y}:{common_max_y}")
